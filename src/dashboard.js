@@ -11,12 +11,13 @@ import bootstrap from './image/bootstrap.png';
 import bgblue from './image/bg-blue.jpg';
 import { useFormik } from 'formik';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 
 function Dasboard() {
 
-    const navigate = useNavigate();
+    
 
     const formik = useFormik({
         initialValues: {
@@ -26,9 +27,9 @@ function Dasboard() {
         },
         onSubmit: async values => {
             try {
-                await axios.post("http://localhost:3001/client/create", values);
+                await axios.post("https://myportfolio-node-app.herokuapp.com//client/create", values);
                 console.log(values);
-                navigate('#home');
+
             } catch (error) {
                 console.log(error);
             }
