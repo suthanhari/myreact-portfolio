@@ -27,7 +27,7 @@ function Dasboard() {
         },
         onSubmit: async values => {
             try {
-                await axios.post("https://myportfolio-node-app.herokuapp.com//client/create", values);
+                await axios.post("https://myportfolio-node-app.herokuapp.com/client/create", values);
                 console.log(values);
 
             } catch (error) {
