@@ -11,7 +11,7 @@ import bootstrap from './image/bootstrap.png';
 import bgblue from './image/bg-blue.jpg';
 import { useFormik } from 'formik';
 import axios from 'axios';
-import { useEffect } from 'react';
+
 
 
 
@@ -361,8 +361,8 @@ function Dasboard() {
                                             laudantium
                                             maiores, eum libero sed asperiores, nihil hic optio nam delectus.</p>
                                         <div class="card-btn">
-                                            <a href="#" class="button">GitHub</a>
-                                            <a href="#" class="button">Live</a>
+                                            <button  class="button">GitHub</button>
+                                            <button  class="button">Live</button>
 
                                         </div>
                                     </div>
