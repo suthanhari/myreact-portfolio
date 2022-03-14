@@ -37,7 +37,7 @@ section {
 
 section:nth-child(2) {
 
-  background-color: #87cfebe1;
+  background-color: #8ec6c9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,11 +49,11 @@ section:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #87cfebe1;
+  background-color: #8ec6c9;
 }
 
 section:nth-child(4) {
-  background-color: #87cfebe1;
+  background-color: #8ec6c9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,7 @@ section:nth-child(4) {
 }
 
 section:nth-child(5) {
-  background-color: #87cfebe1;
+  background-color: #8ec6c9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,13 +94,8 @@ section:nth-child(5) {
 
 
 .heading-1 {
-  font-family: 'Luckiest Guy', cursive;
-  background-image: url("../public/images/text-bg-1.jpg");
-  background-size: cover;
-  background-clip: text;
-  background-position: center;
-  -webkit-background-clip: text;
-  color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: #000101;
   font-size: 22vw;
   font-size: 22vh;
   font-weight: bolder;
@@ -117,11 +112,11 @@ section:nth-child(5) {
 }
 
 .heading-1:hover {
-  transform: translate(0, -20px);
+  transform: translate(0, -10px);
 }
 
 .anime {
-  animation: animetext 3s linear infinite alternate;
+  animation: animetext 5s linear infinite alternate;
 }
 
 @keyframes animetext {
@@ -265,9 +260,9 @@ ul.breadcrumb li a:hover::after {
 .card-profile {
   max-width: 300px;
   text-align: center;
-  background-color: transparent;
+  background-color: #d74847;
   padding: 1px 4px 1px 1px;
-  border: 2px solid #000;
+  border: 2px solid #d74847;
   position: relative;
   transform: perspective(1500px) rotateY(10deg);
   transition-property: transform;
@@ -278,7 +273,7 @@ ul.breadcrumb li a:hover::after {
 
 .card-profile:hover {
   transform: perspective(1500px) rotateY(0deg);
-
+  
 }
 
 
@@ -321,12 +316,17 @@ ul.breadcrumb li a:hover::after {
   transform: scale(0, 1);
   transform-origin: 100% 0%;
   transition: transform 0.3s ease-in-out;
+  
+  
 }
 
 .card-foot:hover::after {
   transform: scale(1, 1);
   transform-origin: 0% 100%;
 }
+
+
+
 
 /* .card-foo>.foot-btn::after{ */
 /* } */
@@ -402,7 +402,7 @@ ul.breadcrumb li a:hover::after {
 .color-in {
   max-width: 850px;
   text-align: center;
-  background-color: var(--dark);
+  background-color: #000101;
   padding-top: 10%;
   padding-bottom: 10%;
   padding-left: 6%;
@@ -423,7 +423,7 @@ ul.breadcrumb li a:hover::after {
 
 .head {
   font-family: 'Amatic SC', cursive;
-  color: #000;
+  color: #000101;
   font-size: 20vw;
   font-size: 20vh;
 
@@ -432,10 +432,10 @@ ul.breadcrumb li a:hover::after {
 .card-skill {
   width: 18rem;
   text-align: start;
-  background: transparent;
+  background: #d74847;
   color: #000;
   padding: 1rem;
-  border: 1px solid var(--dark);
+  border: 1px solid #d74847;
   transform: perspective(1500px) rotateX(0deg);
   transition-property: transform;
   transition-duration: 0.15s;
@@ -447,7 +447,7 @@ ul.breadcrumb li a:hover::after {
   transform: perspective(1500px) rotateX(10deg);
 }
 
-.card-skill>button {
+.card-skill>a>button {
   border: none;
   text-decoration: none;
   display: inline-block;
@@ -464,7 +464,7 @@ ul.breadcrumb li a:hover::after {
   transition-delay: 0s 0s;
 }
 
-.card-skill>button:focus {
+.card-skill>a>button:focus {
   color: #fff;
   background-color: #000;
   border-color: #000;
@@ -487,9 +487,10 @@ ul.breadcrumb li a:hover::after {
   max-height: 100px;
   position: relative;
   background-color: #282726;
+  border-radius: 0.25rem;
   padding: 15px 0;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid #d74847;
   margin-bottom: 15%;
   display: flex;
   align-items: stretch;
@@ -517,6 +518,7 @@ ul.breadcrumb li a:hover::after {
   padding: 0.125em;
   background: var(--white);
   border: 2px solid var(--white);
+  border-radius: 0.25rem;
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -555,7 +557,7 @@ ul.breadcrumb li a:hover::after {
   align-content: space-around;
   padding: 1.255rem;
 
-  background-color: #000;
+  background-color: #000101;
   transform: perspective(1500px) rotateY(-10deg);
 }
 
@@ -715,7 +717,7 @@ ul.breadcrumb li a:hover::after {
   font-weight: 400;
   background-color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #000;
+  border: 1px solid #e25927;
   background-clip: padding-box;
   appearance: none;
   transition-property: border-color, box-shadow;
@@ -727,14 +729,10 @@ ul.breadcrumb li a:hover::after {
 .form:focus {
   color: #000;
   background-color: #fff;
-
   border-radius: 0.25rem;
-  border-color: #000;
-
-
+  border-color: #e25927;
   outline: 0;
-
-  box-shadow: 0 0 0 0.30rem rgba(0, 0, 0, 0.192);
+  box-shadow: 0 0 0 0.30rem rgba(226, 89, 39, 0.192);
 }
 
 .col-flex {
@@ -761,21 +759,21 @@ ul.breadcrumb li a:hover::after {
 }
 
 .form-btn-line {
-  border-color: var(--dark);
-  color: var(--dark);
+  border-color: #e25927;
+  color: #000101;
 
 }
 
 .form-btn-line:hover {
-  color: var(--white);
-  border-color: var(--dark);
-  background-color: var(--dark);
+  color: #000101;
+  border-color: #e25927;
+  background-color: #e25927;
 }
 
 .form-btn-line:focus {
 
   border-radius: 0.25rem;
-  border-color: #000;
+  border-color: #e25927;
   outline: 0;
-  box-shadow: 0 0 0 0.30rem rgba(0, 0, 0, 0.192);
+  box-shadow: 0 0 0 0.30rem rgba(226, 89, 39, 0.192);
 }

@@ -8,6 +8,8 @@ import git from './image/git.png';
 import mdb from './image/mongodb.png';
 import exp from './image/expressjs.svg';
 import bootstrap from './image/bootstrap.png';
+import signin1 from './image/signin.png';
+import projimg from './image/projImg.png';
 import bgblue from './image/bg-blue.jpg';
 import { useFormik } from 'formik';
 import axios from 'axios';
@@ -17,7 +19,7 @@ import axios from 'axios';
 
 function Dasboard() {
 
-    
+
 
     const formik = useFormik({
         initialValues: {
@@ -28,8 +30,7 @@ function Dasboard() {
         onSubmit: async values => {
             try {
                 await axios.post("https://myportfolio-node-app.herokuapp.com/client/create", values);
-                console.log(values);
-
+                alert("Success fully Added");
             } catch (error) {
                 console.log(error);
             }
@@ -160,27 +161,8 @@ function Dasboard() {
 
                             <div class="color-in">
                                 <div class="text-3d">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tenetur maxime explicabo!
-                                        Iste
-                                        aspernatur
-                                        dolorem necessitatibus architecto incidunt. Ipsum voluptas qui ducimus minus perferendis
-                                        itaque
-                                        eligendi
-                                        similique libero ab? Perferendis?</p>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tenetur maxime explicabo!
-                                        Iste
-                                        aspernatur
-                                        dolorem necessitatibus architecto incidunt. Ipsum voluptas qui ducimus minus perferendis
-                                        itaque
-                                        eligendi
-                                        similique libero ab? Perferendis?</p>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tenetur maxime explicabo!
-                                        Iste
-                                        aspernatur
-                                        dolorem necessitatibus architecto incidunt. Ipsum voluptas qui ducimus minus perferendis
-                                        itaque
-                                        eligendi
-                                        similique libero ab? Perferendis?</p>
+                                    <p>Whatsup,iam  very junior fullstack developer (MERN) ,who is seeking for a job .</p>
+                                    
 
                                     <a href='https://drive.google.com/drive/folders/19SDp65QpqeCNKTHBI5wi_cqu0HUaGZGO' target="_blank" rel="noreferrer">
                                         <button class="color-button"> Resume</button>
@@ -216,11 +198,10 @@ function Dasboard() {
 
                             <div class="card-skill">
                                 <h2>my skill:</h2>
-                                <p>Some quick example text to build on the card title and make up the bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <button><strong>See More</strong></button>
+                                <p>Some projects did by the following skills and click the above button to see.</p>
+                                <a href='#project'>
+                                    <button><strong>See More</strong></button>
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-8 colorup">
@@ -345,7 +326,7 @@ function Dasboard() {
                         <div class="head d-flex justify-content-center ">
                             <h1>PROJECT</h1>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
 
 
                             <div class="card-project">
@@ -361,8 +342,8 @@ function Dasboard() {
                                             laudantium
                                             maiores, eum libero sed asperiores, nihil hic optio nam delectus.</p>
                                         <div class="card-btn">
-                                            <button  class="button">GitHub</button>
-                                            <button  class="button">Live</button>
+                                            <button class="button">GitHub</button>
+                                            <button class="button">Live</button>
 
                                         </div>
                                     </div>
@@ -374,6 +355,9 @@ function Dasboard() {
 
                         </div>
 
+                        <div class="col-md-6">
+                            <img src={projimg} alt='projImg' className='anime' />
+                        </div>
 
 
                     </div>
@@ -394,7 +378,7 @@ function Dasboard() {
                         <h1>CONTACT</h1>
                     </div>
 
-                    <div class="col-flex">
+                    <div class="col-flex col-md-6">
                         <form onSubmit={formik.handleSubmit}>
                             <div class="col-mb">
                                 <label for="name" class="label-mb">Name</label><br />
@@ -419,7 +403,6 @@ function Dasboard() {
                                 <label for="comments" class="label-mb">Comments</label><br />
                                 <textarea name="comments" class="form" id="comments" cols="50" rows="5"
                                     placeholder="Type your comments"
-                                    type='text'
                                     onChange={formik.handleChange}
                                     value={formik.values.comments}
                                     required
@@ -432,6 +415,16 @@ function Dasboard() {
 
                         </form>
                     </div>
+
+                    <div className='col-md-6 signin-img'>
+                        <img src={signin1} alt='img' />
+                    </div>
+
+
+
+
+
+
                 </div>
 
 
