@@ -30,7 +30,7 @@ function Dasboard() {
         onSubmit: async values => {
             try {
                 await axios.post("https://myportfolio-node-app.herokuapp.com/client/create", values);
-                alert("Success fully Added");
+                alert("Success  Added");
             } catch (error) {
                 console.log(error);
             }
@@ -90,12 +90,21 @@ function Dasboard() {
                             <h3 class="heading-1">h</h3>
                             <h3 class="heading-1">a</h3>
                             <h3 class="heading-1">n</h3>
+
                         </div>
 
                     </div>
 
-                </div>
+                    <div className='scroll'>
+                        <a href='#about'>
+                            <button className='scroll-btn'><i class="fa-solid fa-angles-down "> Scroll Down</i></button>
 
+                        </a>
+                    </div>
+
+
+
+                </div>
 
 
 
@@ -162,7 +171,7 @@ function Dasboard() {
                             <div class="color-in">
                                 <div class="text-3d">
                                     <p>Whatsup,iam  very junior fullstack developer (MERN) ,who is seeking for a job .</p>
-                                    
+
 
                                     <a href='https://drive.google.com/drive/folders/19SDp65QpqeCNKTHBI5wi_cqu0HUaGZGO' target="_blank" rel="noreferrer">
                                         <button class="color-button"> Resume</button>
@@ -418,6 +427,13 @@ function Dasboard() {
 
                     <div className='col-md-6 signin-img'>
                         <img src={signin1} alt='img' />
+
+                        <div className='scroll-top'>
+                            <a href='#home'>
+                                <button className='scroll-btn'><i class="fa-solid fa-angles-up"></i> Top</button>
+
+                            </a>
+                        </div>
                     </div>
 
 

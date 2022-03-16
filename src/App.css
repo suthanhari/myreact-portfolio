@@ -88,9 +88,9 @@ section:nth-child(5) {
 .d-text {
   display: flex;
   flex-direction: row;
-
   animation: myAnim 3s ease 0s 1 normal forwards;
 }
+
 
 
 .heading-1 {
@@ -245,6 +245,99 @@ ul.breadcrumb li a:hover::after {
   transform: translateY(40%);
 }
 
+
+.scroll {
+  position: absolute;
+  transform: translateY(30%);
+  bottom: 5%;
+  color: #000101;
+
+}
+
+.scroll>a>button{
+  display: inline;
+  text-decoration: none;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  background-color: #d74847;
+  letter-spacing: 0.3ch;
+  color: #000101;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  animation: scroll 3s linear infinite alternate;
+  transition-property: box-shadow,border-color;
+  transition-timing-function: ease-in-out ease-in-out;
+  transition-duration: 0.15s 0.15s;
+  transition-delay: 0s 0s;
+}
+
+.scroll>a>button:focus {
+  color: #000101;
+  background-color: #d74847;
+  border-color: #d74847;
+  border-radius: 0.25rem;
+  outline: 0;
+  box-shadow: 0 0 0 0.30rem rgba(215, 71, 71, 0.616) ;
+}
+
+
+
+@keyframes scroll {
+  from {
+    transform: translateY(-10%);
+  }
+
+  to {
+    transform: translateY(10%);
+  }
+}
+
+
+
+.scroll-top{
+  position: absolute;
+  transform: translateY(30%);
+  right: 5%;
+  bottom: 5%;
+  color: #000101;
+}
+
+.scroll-top>a>button{
+  display: inline;
+  text-decoration: none;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  background-color: #d74847;
+  letter-spacing: 0.3ch;
+  color: #000101;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  animation: scrollTop 3s linear infinite alternate;
+  transition-property: box-shadow,border-color;
+  transition-timing-function: ease-in-out ease-in-out;
+  transition-duration: 0.15s 0.15s;
+  transition-delay: 0s 0s;
+}
+
+.scroll-top>a>button:focus {
+  color: #000101;
+  background-color: #d74847;
+  border-color: #d74847;
+  border-radius: 0.25rem;
+  outline: 0;
+  box-shadow: 0 0 0 0.20rem rgba(215, 71, 71, 0.616) ;
+}
+
+@keyframes scrollTop {
+  from {
+    transform: translateY(-10%);
+  }
+
+  to {
+    transform: translateY(10%);
+  }
+}
+
 #mybtn {
   display: none;
   padding: 10px;
@@ -273,7 +366,7 @@ ul.breadcrumb li a:hover::after {
 
 .card-profile:hover {
   transform: perspective(1500px) rotateY(0deg);
-  
+
 }
 
 
@@ -316,8 +409,8 @@ ul.breadcrumb li a:hover::after {
   transform: scale(0, 1);
   transform-origin: 100% 0%;
   transition: transform 0.3s ease-in-out;
-  
-  
+
+
 }
 
 .card-foot:hover::after {
@@ -776,4 +869,9 @@ ul.breadcrumb li a:hover::after {
   border-color: #e25927;
   outline: 0;
   box-shadow: 0 0 0 0.30rem rgba(226, 89, 39, 0.192);
+}
+
+.down>.fa-solid {
+  z-index: 10;
+  color: red;
 }
