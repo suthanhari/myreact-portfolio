@@ -173,7 +173,7 @@ function Dasboard() {
                                     <p>Whatsup,iam  very junior fullstack developer (MERN) ,who is seeking for a job .</p>
 
 
-                                    <a href='https://drive.google.com/drive/folders/19SDp65QpqeCNKTHBI5wi_cqu0HUaGZGO' target="_blank" rel="noreferrer">
+                                    <a href='https://drive.google.com/file/d/1lA-pPbwMsAYh81g2N8flPsB_m-qrqVNC/view?usp=sharing' target="_blank" rel="noreferrer">
                                         <button class="color-button"> Resume</button>
                                     </a>
                                 </div>
